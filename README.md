@@ -34,4 +34,10 @@ bash runServer.sh
 <div align="center">
 <h1> Main Page Screenshot </h1>
 <img src="ss/main_page.png" alt="Main Page">
+<h1> Login with API </h1>
+<img src="https://i.ibb.co/ZYcCkVn/login-with-api.png" alt="API">
+<h1> Login with Phone </h1>
+<img src="https://i.ibb.co/gV6bgYJ/login-with-phone.png" alt="Phone">
+<h1> Home Page </h1>
+<img src="https://i.ibb.co/sJdtsdn/home.png">
 </div>
