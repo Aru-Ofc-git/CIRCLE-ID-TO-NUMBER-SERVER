@@ -33,5 +33,5 @@ bash runServer.sh
 
 <div align="center">
 <h1> Main Page Screenshot </h1>
-<img src="/ss/main_page.png>
+<img src="ss/main_page.png" alt="Main Page">
 </div>
