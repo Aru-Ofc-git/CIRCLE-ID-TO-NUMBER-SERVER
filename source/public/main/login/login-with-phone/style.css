@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    background-image: url('../../image/backgroundDesktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.loginText h1{
+    font-size: 40px;
+    display: block;
+    margin-top: 15%;
+}
+#number{
+    background: transparent;
+    height: 40px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border-image-source: linear-gradient(to left, rgb(255, 170, 0), rgb(255, 0, 0));
+    border-width: 2px;
+    border-image-slice: 1;
+    color: rgb(0, 0, 0);
+}
+#otp{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border-image-source: linear-gradient(to left, rgb(255, 170, 0), rgb(255, 0, 0));
+    border-width: 2px;
+    border-image-slice: 1;
+    margin-bottom: 30px;
+}
+.numberText{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    left: 16%;
+    padding: 7px;
+    opacity: 0.8;
+    z-index: -1;
+    transition: 0.6s;
+}
+.otpText{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    left: 16%;
+    padding: 8px;
+    opacity: 0.8;
+    z-index: -1;
+    transition: 0.6s;
+}
+button{
+    height: 40px;
+    width: 30%;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(150deg, rgb(0,213,255),rgb(68,0,255));
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    margin-left: 10px;
+    margin-bottom: 30px;
+
+}
+button:nth-child(1){
+    height: 40px;
+    width: 30%;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(150deg, rgb(255, 0, 21),rgb(255, 123, 0));
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    margin-left: 10px;
+}
+.btnDisable{
+    background: linear-gradient(150deg, rgb(255, 138, 147),#ff9531);
+    cursor: not-allowed;
+}
+
+.activeOTP{
+    background-color: #ffffff;
+    top: 383px;
+    padding: 0px 7px 0px 7px;
+    opacity: 1;
+    z-index: 1;
+}
+.activePhone{
+    top: 320px;
+    background-color: #ffffff;
+    padding: 0px 7px 0px 7px;
+    opacity: 1;
+    z-index: 1;
+    /* font-weight: bold; */
+}
+
+.OtherLogin a{
+    text-decoration: none;
+    color: rgb(89, 0, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.OtherLogin a:hover{
+    color: red;
+}
+.social a img{
+    height: 30px;
+    width: 30px;
+    margin-top: 50px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    border-radius: 50%;
+    background-color: white;
+}
+.social a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: url('../../image/backgroundMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .loginText h1{
+        margin-top: 260px;
+    }
+    .activePhone{
+        top: 315px;
+    }
+    .activeOTP{
+        top: 376px;
+    }
+    button{
+        height: 35px;
+    }
+    button:nth-child(1){
+        height: 35px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:992px) {
+    body{
+        background-image: url('../../image/backgroundMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .loginText h1{
+        margin-top: 310px;
+    }
+    .activePhone{
+        top: 365px;
+    }
+    .activeOTP{
+        top: 427px;
+    }
+    button{
+        height: 35px;
+    }
+    button:nth-child(1){
+        height: 35px;
+    }
+}

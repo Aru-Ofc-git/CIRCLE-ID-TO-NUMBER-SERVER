@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    background-image: url('../image/backgroundMobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.logo img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 48%;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    cursor: no-drop;
+}
+#number{
+    background: transparent;
+    height: 40px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border-image-source: linear-gradient(to left, rgb(255, 132, 0), rgb(255, 0, 0));
+    border-width: 2px;
+    border-image-slice: 1;
+    color: white;
+    /* font-size: 15px; */
+    font-weight: bold;
+}
+.numberText{
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    left: 17%;
+    padding: 7px;
+    opacity: 0.8;
+    z-index: -1;
+    transition: 0.7s;
+    color: #fff;
+    /* font-weight: bold; */
+}
+.numberFocus{
+    top: 250px;
+    background-color: #049EF4;
+    opacity: 1;
+    z-index: 1;
+    left: 18%;
+    padding: 0px 7px 0px 7px;
+    font-size: 16px;
+    /* font-weight: bold; */
+    transition: 0.6s;
+}
+button{
+    height: 30px;
+    width: 30%;
+    display: block;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(150deg, rgb(0,213,255),rgb(68,0,255));
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    margin: 0 auto;
+
+}
+.menu .menuIcon img{
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+.profileInfo{
+    height: 100vh;
+    background: url('../image/backgroundMobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 0;
+    display: none;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+
+    color: black;
+}
+.profileInfo .pp img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 48%;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    cursor: no-drop;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.profileInfo .close span{
+    font-size: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    position: absolute;
+    right: 27px;
+    font-weight: bolder;
+    top: 10px;
+    cursor: pointer;
+}
+.nickname .nick{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.apiKey #apiKey{
+    height: 30px;
+    margin-left: 12px;
+    margin-top: 15px;
+    background: transparent;
+    outline: none;
+    /* border: none; */
+    border-image-source: linear-gradient(to left, rgb(0, 213, 255), rgb(68, 0, 255));
+    border-width: 2px;
+    border-image-slice: 1;
+    color: black;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: not-allowed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.apiKey #copyAPI{
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    background: linear-gradient(150deg, rgb(0,213,255),rgb(68,0,255));
+    padding: 5px;
+    border-radius: 5px;
+    /* font-size: ; */
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.otherInformation table tr{
+    color: black;
+    display: block;
+    line-height: 20px;
+    word-spacing: 5px;
+    padding-left: 10px;
+}
+.otherInformation table tr td:nth-child(2){
+    font-weight: bold;
+    padding-left: 20px;
+}
+.msg{
+    height: 20px;
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+}
+.msg span{
+    color: green;
+    display: block;
+    font-size: 30px;
+    padding-bottom: 60px;
+}
+
+.social a img{
+    height: 30px;
+    width: 30px;
+    margin-top: 50px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    border-radius: 50%;
+    background-color: white;
+}
+.social a {
+    text-decoration: none;
+}
+#logout{
+    margin-top: 80px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.disable{
+    cursor: not-allowed;
+}
+.btnDisable{
+    background: linear-gradient(150deg, rgb(255, 138, 147),#ff9531);
+    cursor: not-allowed;
+}
+.info_section{
+    background: url('../image/backgroundMobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    box-shadow: 2px 2px 10px rgb(192,192,192), -2px -2px 10px rgb(192, 192, 192);
+    z-index: 2;
+    display: none;
+}
+.pp_image img{
+    height: 130px;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 48%;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    cursor: no-drop;
+    margin-bottom: 15px;
+}
+#closeInfo {
+height: 60px;
+float: right;
+position: absolute;
+right: -15px;
+top: -15px;
+font-weight: bolder;
+cursor: pointer;
+}
+.information tr td{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 2px;
+    padding-left: 10px;
+}
+.information tr td:nth-child(2){
+    color: red;
+}
+#copyJSON{
+    margin-top: 15px;
+}
+.info_when_unavailable span{
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    body{
+        background-image: url('../image/backgroundMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    .logo img{
+        height: 150px;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 180px;
+        border-radius: 48%;
+        box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+        cursor: no-drop;
+    }
+    #number{
+        background: transparent;
+        height: 40px;
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+        border-image-source: linear-gradient(to left, rgb(0, 213, 255), rgb(68, 0, 255));
+        border-width: 2px;
+        border-image-slice: 1;
+        color: black;
+        /* font-size: 15px; */
+        font-weight: bold;
+    }
+    .numberText{
+        font-size: 20px;
+        position: absolute;
+        background: transparent;
+        left: 17%;
+        padding: 7px;
+        opacity: 0.5;
+        z-index: -1;
+        transition: 0.7s;
+        color: black;
+    }
+    .numberFocus{
+        top: 342px;
+        background-color: rgb(255, 255, 255);
+        opacity: 1;
+        z-index: 1;
+        left: 18%;
+        padding: 0px 7px 0px 7px;
+        font-size: 16px;
+        /* font-weight: bold; */
+        transition: 0.6s;
+        color: black;
+        
+    }
+    button{
+        height: 30px;
+        width: 30%;
+        display: block;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background: linear-gradient(150deg, rgb(0,213,255),rgb(68,0,255));
+        color: white;
+        font-size: 18px;
+        font-family: Helvetica;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+        margin: 0 auto;
+    
+    }
+    .menu .menuIcon img{
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+    .profileInfo{
+        height: 100vh;
+        background: url('../image/backgroundMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 300px;
+        top: 0;
+        left: 0;
+        display: none;
+        box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    
+        color: black;
+    }
+    .profileInfo .pp img{
+        height: 150px;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 48%;
+        box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+        cursor: no-drop;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .profileInfo .close span{
+        font-size: 30px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+        position: absolute;
+        right: 27px;
+        font-weight: bolder;
+        top: 10px;
+        cursor: pointer;
+    }
+    .nickname .nick{
+        color: black;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .apiKey #apiKey{
+        height: 30px;
+        margin-left: 12px;
+        margin-top: 15px;
+        background: transparent;
+        outline: none;
+        /* border: none; */
+        border-image-source: linear-gradient(to left, rgb(0, 213, 255), rgb(68, 0, 255));
+        border-width: 2px;
+        border-image-slice: 1;
+        color: black;
+        margin-right: 10px;
+        font-size: 16px;
+        cursor: not-allowed;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .apiKey #copyAPI{
+        outline: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+        background: linear-gradient(150deg, rgb(0,213,255),rgb(68,0,255));
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .otherInformation table tr{
+        color: black;
+        display: block;
+        line-height: 20px;
+        word-spacing: 5px;
+        padding-left: 10px;
+    }
+    .otherInformation table tr td:nth-child(2){
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .msg{
+        height: 20px;
+        width: 100%;
+        margin-top: 40px;
+        display: block;
+    }
+    .msg span{
+        color: green;
+        display: block;
+        font-size: 30px;
+        padding-bottom: 60px;
+    }
+    
+    .social a img{
+        height: 30px;
+        width: 30px;
+        margin-top: 50px;
+        margin-left: 5px;
+        box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+        border-radius: 50%;
+        background-color: white;
+    }
+    .social a {
+        text-decoration: none;
+    }
+    #logout{
+        margin-top: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    .disable{
+        cursor: not-allowed;
+    }
+    .btnDisable{
+        background: linear-gradient(150deg, rgb(255, 138, 147),#ff9531);
+        cursor: not-allowed;
+    }
+    .info_section{
+        background: url('../image/backgroundMobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        box-shadow: 2px 2px 10px rgb(192,192,192), -2px -2px 10px rgb(192, 192, 192);
+        z-index: 2;
+        display: none;
+    }
+    .pp_image img{
+        height: 130px;
+        width: 130px;
+        margin: 0 auto;
+        margin-top: 7%;
+        border-radius: 48%;
+        box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+        cursor: no-drop;
+        margin-bottom: 15px;
+    }
+    #closeInfo {
+    height: 40px;
+    float: right;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    font-weight: bolder;
+    cursor: pointer;
+    }
+    .information tr td{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 2px;
+        padding-left: 10px;
+    }
+    .information tr td:nth-child(2){
+        color: red;
+    }
+    #copyJSON{
+        margin-top: 15px;
+    }
+    .info_when_unavailable span{
+        color: red;
+        font-size: 32px;
+        font-weight: bold;
+    }
+}

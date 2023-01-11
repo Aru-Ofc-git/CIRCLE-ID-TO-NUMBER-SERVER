@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    background-image: url('../../image/backgroundDesktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.loginText h1{
+    font-size: 40px;
+    display: block;
+    margin-top: 15%;
+}
+#mkey{
+    background: transparent;
+    height: 40px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border-image-source: linear-gradient(to left, rgb(255, 0, 238), rgb(255, 0, 0));
+    border-width: 2px;
+    border-image-slice: 1;
+    color: rgb(0, 0, 0);
+}
+.mkeyText{
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    left: 16%;
+    padding: 7px;
+    opacity: 0.5;
+    z-index: -1;
+    transition: 0.8s;
+    color: rgb(0, 0, 0);
+}
+button{
+    height: 40px;
+    width: 35%;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(150deg, rgb(255, 140, 0),rgb(255, 0, 0));
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    margin-left: 10px;
+    margin-bottom: 30px;
+
+}
+.activeMkey{
+    top: 323px;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 0px 7px 0px 7px;
+    opacity: 1;
+    left: 16.5%;
+    z-index: 1;
+    /* font-weight: bold; */
+}
+
+.OtherLogin a{
+    text-decoration: none;
+    color: rgb(89, 0, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.OtherLogin a:hover{
+    color: red;
+}
+.social a img{
+    height: 30px;
+    width: 30px;
+    margin-top: 50px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 10px rgb(192,192,192), -1px -1px 10px rgb(192, 192, 192);
+    border-radius: 50%;
+    background-color: white;
+}
+.social a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: url('../../image/backgroundMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .loginText h1{
+        font-size: 40px;
+        display: block;
+        margin-top: 210px;
+    }
+    button{
+        height: 30px;   
+    }
+    .activeMkey{
+        top: 268px;
+        font-size: 16px;
+        background-color: #ffffff;
+        padding: 0px 7px 0px 7px;
+        opacity: 1;
+        left: 16.5%;
+        z-index: 1;
+        /* font-weight: bold; */
+    }
+}
+@media screen and (min-width:600px) and (max-width: 992px){
+    body{
+        background-image: url('../../image/backgroundMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .loginText h1{
+        font-size: 40px;
+        display: block;
+        margin-top: 350px;
+    }
+    #mkey{
+        height: 50px;
+    }
+    .mkeyText{
+        font-size: 27px;
+    }
+    button{
+        height: 50px;
+        font-size: 25px;
+    }
+    .activeMkey{
+        top: 405px;
+        font-size: 20px;
+        background-color: #ffffff;
+        padding: 0px 7px 0px 7px;
+        opacity: 1;
+        left: 16.5%;
+        z-index: 1;
+        /* font-weight: bold; */
+    }
+    .OtherLogin a{
+        font-size: 20px;
+    }
+}

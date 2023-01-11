@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="http://localhost:3000/home/css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menuIcon">
+                <img id="show" src="../image/menu.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="profileInfo">
+            <div class="close">
+                <span id="close">X</span>
+            </div>
+            <div class="pp">
+                <img id="profile" src="" alt="image" srcset="">
+            </div>
+            <div class="nickname">
+                <center>
+                <span class="nick">ARU</span>
+                </center>
+            </div>
+            <div class="apiKey">
+                <input type="text" readonly="true" id="apiKey" value="jghasdfsgrdufhasfgeqwuiaryewqrudfsahdfadh">
+                <center>
+                  <br>
+                  <input id="copyAPI" type="button" value="COPY">
+                  <br>
+                  <br>
+                </center>
+            </div>
+            <div class="otherInformation">
+                <table>
+                    <tbody>
+                        <tr id="nameText"><td>Name: </td><td class="name">ARU</td></tr>
+                        <tr id="bumberText"><td>Number: </td><td class="number">+8801XXXXXXXXX</td></tr>
+                        <tr ><td>Birthday: </td><td class="birthday">00</td></tr>
+                        <tr ><td>Status: </td><td class="status">00</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="logout">
+                <button id="logout">LOGOUT</button>
+            </div>
+        </div>
+
+        <div class="info_section">
+            <div class="closeInfo">
+                <img src="../image/close.png" alt="" id="closeInfo">
+            </div>
+            <center>
+                <div class="pp_image">
+                    <img id="pp_image" src="../image/logo.jpg" alt="Profile Picture" srcset="">
+                </div>
+        <div class="info_when_available">
+            <table class="information">
+                <tbody>
+                    <tr><td class="nicknameText">Nickname: </td><td class="nickname_info">ARU</td></tr>
+                    <tr><td class="nameText">Name: </td><td class="name_info">ARU</td></tr>
+                    <tr> <td class="numberTxt">Number: </td> <td class="number_info">+88018XXXXXXX</td></tr>
+                    <tr><td class="pointsText">Points: </td><td class="points">00</td></tr>
+                    <tr><td class="shoutText">Shout: </td><td class="shout">00</td></tr>
+                    <tr><td class="commentsText">Comments: </td><td class="comments">00</td></tr>
+                    <tr><td class="genderText">Gender: </td><td class="gender">M/F</td></tr>
+                    <tr><td class="birthdayText">Birthday: </td><td class="birthday_info">Null</td></tr>
+                    <tr><td class="followingText">Following: </td> <td class="following">00</td></tr>
+                    <tr><td class="followersText">Followers: </td><td class="followers">00</td></tr>
+                    <tr><td class="languageText">Language: </td><td class="language">BN/EN</td></tr>
+                    <tr><td class="lastshoutText">Last Shout: </td> <td class="lastshout">Hello Everyone</td></tr>
+                    <tr><td class="lastactiveText">Last Active: </td><td class="lastactive">00</td></tr>
+                    <tr><td class="appaccessText">App Acces: </td> <td class="appaccess">ON/OFF</td></tr>
+                </tbody>
+            </table>
+            <textarea style="display: none;" name="infoJSON" id="infoVal" cols="30" rows="10" class="infoVal" readonly>JSON VALUE HERE</textarea>
+            <button id="copyJSON">COPY JSON</button>
+        </div>
+            </center>
+        </div>
+        <div class="logo">
+            <img src="../image/logo.jpg" alt="logo" srcset="">
+        </div>
+        <div class="inputFeild">
+                <label for="number" class="numberText">Number OR ID</label>
+                <input type="text" name="number" id="number">
+                <button class="submit">GET INFO</button>
+            <div class="social">
+                <center>
+                    <a href="http://www.facebook.com/Aru.Ofc"><img src="../image/facebook.png" alt="" srcset=""></a>
+                    <a href="http://www.instagram.com/aru.ofc.insta"><img src="../image/instagram.png" alt="" srcset=""></a>
+                    <a href="http://www.twiter.com/AruOfc"><img src="../image/twiter.png" alt="" srcset=""></a>
+                </center>
+            </div>
+    </div>
+    <script src="../jQuery/jQuery.js"></script>
+    <script src="http://localhost:3000/home/js"></script>
+</body>
+</html>

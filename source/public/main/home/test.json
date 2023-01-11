@@ -1,0 +1,31 @@
+{
+    "rcode": 1,
+    "rdesc": "OK",
+    "data": {
+       "msisdn": "8801832116637",
+       "nickname": "CraZykiiNg",
+       "status_id": "1",
+       "start_date": "2022-06-26 22:02:52",
+       "end_date": "2022-12-15 23:00:38",
+       "rank": "0",
+       "gender": "M",
+       "birthday": "2003-02-03 00:00:00",
+       "language": "bd",
+       "thumbnail": "/kolony/scripts/photo.php?nickname=CraZykiiNg",
+       "image": "/kolony/scripts/image2.php?content_id=M0&nickname=CraZykiiNg",
+       "package_id": "1",
+       "name": "Mr Aru",
+       "agent": "3",
+       "type": "0",
+       "points": "66",
+       "expiry": null,
+       "followers": "81",
+       "following": "84",
+       "friends": "1",
+       "updates": "1745",
+       "comments": "396",
+       "timestamp": "2022-12-15 23:00:32",
+       "mlstatus": "good bye",
+       "mlstatus_id": null
+    }
+ }
